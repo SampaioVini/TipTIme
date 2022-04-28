@@ -1,0 +1,50 @@
+
+<!--Botaos serao adicionados aqui-->
+<RadioButton
+    android:id="@+id/opcao_vinte_porcento"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Incrivel (20%)" />
+
+<RadioButton
+android:id="@+id/opcao_dezoito_porcento"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Bom (18%)" />
+
+<RadioButton
+android:id="@+id/opcao_quinze_porcento"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Normal (15%)" />
+    </RadioGroup>
+
+<Switch
+android:id="@+id/round_up_switch"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:checked="true"
+android:text="Arredondar o valor da gorjeta?"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/opcoes" />
+
+<Button
+android:id="@+id/calcular_botao"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:text="Calcular"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
+
+<TextView
+android:id="@+id/tip_result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/valor_da_gorjeta"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/calcular_botao" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>t>
