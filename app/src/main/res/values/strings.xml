@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TipTime</string>
     <string name="valor_da_gorjeta">valor_da_gorjeta</string>
+    <string name="calcular">Calcular</string>
 </resources>
