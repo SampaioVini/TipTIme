@@ -3,6 +3,7 @@ package com.ds.tiptime
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ds.tiptime.databinding.ActivityMainBinding
+import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -23,5 +24,13 @@ class MainActivity : AppCompatActivity() {
             -> 0.15
         }
         var tipo = tipoPercentagem * cost
+        val roundUp = binding.roundUpSwitch.isChecked
+        if (roundUp)  {
+
+            tipo = kotlin.math.ceil(tipo)
+        }
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tipo)
+        binding.tipResult.text = formattedTip
+
     }
 }
